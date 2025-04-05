@@ -1,0 +1,17 @@
+streamlit
+pandas
+numpy
+faiss-cpu
+google-generativeai
+requests 
+beautifulsoup4 
+selenium
+webdriver-manager
+streamlit
+fastapi
+uvicorn
+sentence-transformers
+pandas
+selenium
+scikit-learn
+bs4
