@@ -15,3 +15,9 @@ pandas
 selenium
 scikit-learn
 bs4
+fastapi
+uvicorn
+scikit-learn
+pandas
+numpy
+joblib
