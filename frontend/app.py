@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="SHL Assessment Recommender")
 
-API_URL = "http://3.110.124.223:8000/recommend"  # Change this to your deployed URL if needed
+API_URL = "http://3.110.124.223:8000/recommend"  # deployed URL
 
 st.title("🔍 SHL Assessment Recommender")
 
