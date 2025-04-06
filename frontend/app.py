@@ -6,7 +6,11 @@ st.set_page_config(page_title="SHL Assessment Recommender")
 API_URL = "http://3.110.124.223:8000/recommend"  # Change this to your deployed URL if needed
 
 st.title("🔍 SHL Assessment Recommender")
-query = st.text_area("Enter job description or query", height=150)
+
+# Example query to guide the user
+example_query = "Looking to hire mid-level professionals who are proficient in Python, SQL, and JavaScript. Need an assessment package that can test all skills with a max duration of 60 minutes."
+
+query = st.text_area("Enter job description or query", height=150, placeholder=example_query)
 
 if st.button("Recommend"):
     if not query.strip():
