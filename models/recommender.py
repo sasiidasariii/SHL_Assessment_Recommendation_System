@@ -35,7 +35,7 @@ class SHLRecommender:
             "py": "python",
             "pythn": "python",
             "javascrpt": "javascript",
-            "java script": "javascript",  # <-- Added
+            "java script": "javascript",  
             "sqls": "sql",
             "prob solving": "problem solving",
             "collab": "collaboration",
@@ -76,7 +76,7 @@ class SHLRecommender:
             )
             filtered = filtered[filtered["duration_num"] <= duration_limit]
 
-        # 🧠 Apply skill conflict filter to avoid Java vs JavaScript confusion
+        # Apply skill conflict filter to avoid Java vs JavaScript confusion
         filtered = self.filter_conflicting_skills(keywords, filtered)
 
         filtered = filtered.sort_values("final_score", ascending=False)
@@ -129,7 +129,7 @@ class SHLRecommender:
             if close:
                 matched_skills.add(close)
 
-        # 👇 Handle conflict: if "java" present and "javascript" is not explicitly mentioned, remove "javascript"
+        # Handle conflict: if "java" present and "javascript" is not explicitly mentioned, remove "javascript"
         if "java" in matched_skills and "javascript" in matched_skills and "javascript" not in query_lower:
             matched_skills.remove("javascript")
 
@@ -144,7 +144,7 @@ class SHLRecommender:
         return [level for level in self.known_job_levels if level.lower() in query_lower]
 
     def filter_conflicting_skills(self, keywords, df):
-        # 🧹 Exclude front-end skills if query is about Java only
+        #  Exclude front-end skills if query is about Java only
         if "java" in keywords and "javascript" not in keywords:
             df = df[~df["description"].str.contains("javascript|html|css", case=False, na=False)]
             df = df[~df["assessment_name"].str.contains("javascript|html|css", case=False, na=False)]
