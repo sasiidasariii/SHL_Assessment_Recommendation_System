@@ -19,3 +19,13 @@ scikit-learn
 bs4
 
 joblib
+
+streamlit
+fastapi
+uvicorn
+pydantic
+pygments
+rich
+markdown-it-py
+mdurl
+
