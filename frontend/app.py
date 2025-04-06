@@ -3,7 +3,7 @@ import requests
 
 st.set_page_config(page_title="SHL Assessment Recommender")
 
-API_URL = "https://shl-assessment-recommendation-system-ipd0.onrender.com"  # deployed URL
+API_URL = "https://shl-assessment-recommendation-system-ipd0.onrender.com"  #  deployed URL
 
 st.title("🔍 SHL Assessment Recommender")
 query = st.text_area("Enter job description or query", height=150)

@@ -156,4 +156,3 @@ recommender = SHLRecommender()
 
 def retrieve_top_k(query: str, k: int = 5):
     return recommender.recommend(query, top_k=k)
-
