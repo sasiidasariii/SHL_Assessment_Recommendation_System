@@ -15,7 +15,7 @@ huggingface_hub==0.13.4
 scikit-learn
 bs4
 joblib
-tokenizers==0.13.3
+
 rich>=10.14.0
 markdown-it-py>=2.2.0
 pygments<3.0.0,>=2.13.0
