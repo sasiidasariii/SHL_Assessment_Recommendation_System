@@ -68,7 +68,7 @@ The system evaluates the accuracy of the recommendations using two key metrics:
 
 **Example for Query 2:**
 
-   > MAP@5: 1.0 (Perfect precision for the top 4 recommendations)
+   MAP@5: 1.0 (Perfect precision for the top 4 recommendations)
 
 **Results**
 
