@@ -1,4 +1,7 @@
 SHL Assessment Recommendation System
+
+This project is a job-description-to-assessment matching engine that helps recommend the most relevant SHL Individual Test Solutions based on job descriptions or free-form queries. It uses a combination of Large Language Models (LLMs), Sentence-BERT, and a scoring mechanism to generate top-matching assessments.
+
 🔗 Live Resources
 
 🌐 Web App: https://assessmentapp.streamlit.app
@@ -7,4 +10,3 @@ SHL Assessment Recommendation System
 
 📂 GitHub Repo: https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System
 
-This project is built as part of the SHL Research Intern Assessment. It recommends suitable SHL assessments based on job roles or descriptions using NLP-based semantic similarity. The system is accessible through a simple web interface and uses vector embeddings to understand and compare user queries with SHL assessment descriptions.
