@@ -11,7 +11,7 @@ This project is a job-description-to-assessment matching engine that helps recom
 📂 **GitHub Repo**: https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System
 
 
-📁 **Repository Structure**
+## 📁 Repository Structure
 
 SHL_Assessment_Recommendation_System/
 ├── frontend/                     # Streamlit UI interface
