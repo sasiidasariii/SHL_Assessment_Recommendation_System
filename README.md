@@ -121,7 +121,7 @@ Top 4 Recommendations:
 
 **Install dependencies**
 
-   pip install -r requirements.txt
+   > pip install -r requirements.txt
 
 **Run the app**
 
