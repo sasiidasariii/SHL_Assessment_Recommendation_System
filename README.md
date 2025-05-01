@@ -125,7 +125,7 @@ Top 4 Recommendations:
 
 **Run the app**
 
-   streamlit run frontend/app.py
+   >streamlit run frontend/app.py
 
 
 
