@@ -10,3 +10,19 @@ This project is a job-description-to-assessment matching engine that helps recom
 
 📂 **GitHub Repo**: https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System
 
+
+📁 **Repository Structure**
+
+SHL_Assessment_Recommendation_System/
+├── frontend/                     # Streamlit UI interface
+│   └── app.py
+├── backend/                      # Backend processing (query handling, matching)
+│   └── query.py
+├── cleaning_and_Preprocessing/  # Data preprocessing scripts
+├── data/                         # SHL assessment dataset
+├── evaluation/                   # Evaluation metrics and score tracking
+├── scraper/                      # SHL assessment scraper
+├── utils/                        # Utility functions
+├── requirements.txt              # Required Python packages
+└── README.md                     # Project documentation
+
