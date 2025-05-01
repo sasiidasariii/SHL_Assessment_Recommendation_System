@@ -25,6 +25,7 @@ Recommend the most relevant SHL assessments based on user-provided job titles, d
 
 🔧 **Solution Architecture**
 
+
 **1. Data Collection:**
 
 Source: SHL Product Catalog
@@ -40,6 +41,7 @@ other details.
 • Stored in structured CSV format (shl_individual_tests.csv) under the data/
 directory.
 
+
 **2. Text Parsing & Feature Extraction:**
 
 • Libraries: pandas, re, nltk
@@ -49,6 +51,7 @@ NLP utilities.
 
 • Standardized and cleaned the test descriptions to improve embedding
 quality.
+
 
 **3. Query Understanding & Recommendation Engine:**
 
@@ -64,6 +67,7 @@ o User’s natural language query/job description
 
 • Computed similarity scores to return the Top-N most relevant
 assessments.
+
 
 **4. Backend API:**
 
@@ -87,7 +91,9 @@ o Relevant test recommendations
 
 o Test titles, categories, and relevant skills/keywords
 
+
 **Ranking:** Top-N assessments returned based on semantic match score.
+
 
 ## 🔄 Backend API
 
