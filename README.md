@@ -28,47 +28,63 @@ Recommend the most relevant SHL assessments based on user-provided job titles, d
 **1. Data Collection:**
 
 Source: SHL Product Catalog
+
 Tools: Selenium, BeautifulSoup
 
 • I automated the scraping of only the "Individual Test Solutions" section
 (over 32 pages).
+
 • Captured key information: test name, category, description, URL, and
 other details.
+
 • Stored in structured CSV format (shl_individual_tests.csv) under the data/
 directory.
 
 **2. Text Parsing & Feature Extraction:**
 
 • Libraries: pandas, re, nltk
+
 • Extracted important keywords, skills, and test duration using regex and
 NLP utilities.
+
 • Standardized and cleaned the test descriptions to improve embedding
 quality.
 
 **3. Query Understanding & Recommendation Engine:**
 
 • Model: all-MiniLM-L6-v2 (from sentence-transformers)
+
 • Similarity: cosine similarity using scikit-learn
+
 • Generated dense vector embeddings for:
+
 o All SHL assessments
+
 o User’s natural language query/job description
+
 • Computed similarity scores to return the Top-N most relevant
 assessments.
 
 **4. Backend API:**
 
 • Framework: FastAPI
+
 • Endpoint: POST /recommend
+
 • Accepts a query in JSON and returns SHL test recommendations with
 metadata.
+
 • Hosted on an AWS EC2 instance.
 
 **5. Frontend Interface:**
 
 • Framework: Streamlit
+
 • User-friendly UI where users can input their job description or query and
 view:
+
 o Relevant test recommendations
+
 o Test titles, categories, and relevant skills/keywords
 
 **Ranking:** Top-N assessments returned based on semantic match score.
