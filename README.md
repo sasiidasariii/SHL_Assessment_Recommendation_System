@@ -111,4 +111,21 @@ MAP@5: 1.0
 evaluate/: Contains the evaluation script to assess the performance of the recommender.
 
 
+## 🚀 How to Run Locally
+
+**Clone the repository**
+
+git clone https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System.git
+cd SHL_Assessment_Recommendation_System
+
+**Install dependencies**
+
+pip install -r requirements.txt
+
+**Run the app**
+
+streamlit run frontend/app.py
+
+
+
 
