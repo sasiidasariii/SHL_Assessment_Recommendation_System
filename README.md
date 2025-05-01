@@ -26,3 +26,26 @@ SHL_Assessment_Recommendation_System/
 ├── requirements.txt              # Required Python packages
 └── README.md                     # Project documentation
 
+
+## 🧠 Approach & Architecture
+
+📌 **Problem Statement**
+Recommend the most relevant SHL assessments based on user-provided job titles, descriptions, or skill sets.
+
+🔧 **Solution Architecture**
+Input Handling: User enters a job title or description via Streamlit UI.
+
+**Text Preprocessing:** Clean and normalize text input and SHL descriptions.
+
+**Vectorization:** Encode texts using SentenceTransformer (MiniLM-based).
+
+**Similarity Computation:** Use cosine similarity to find closest matching assessments.
+
+**Ranking:** Top-N assessments returned based on semantic match score.
+
+## 🔄 Backend API
+The core logic is embedded in query.py, which exposes a function to process queries and return recommendations. This is integrated directly into the Streamlit UI.
+**API URL**: http://3.110.124.223:8000/recommend
+
+
+
