@@ -68,7 +68,7 @@ The system evaluates the accuracy of the recommendations using two key metrics:
 
 **Example for Query 2:**
 
-   MAP@5: 1.0 (Perfect precision for the top 5 recommendations)
+   > MAP@5: 1.0 (Perfect precision for the top 4 recommendations)
 
 **Results**
 
@@ -87,9 +87,9 @@ Top 5 Recommendations:
 
 **Evaluation:**
 
-   Recall@5: 1.0
+   > Recall@5: 1.0
    
-   MAP@5: 0.8042
+   > MAP@5: 0.8042
 
 **Query 2: Give me assessments to test JavaScript skills for graduates that are remote-compatible**
 Top 4 Recommendations:
@@ -104,9 +104,9 @@ Top 4 Recommendations:
 
 **Evaluation:**
 
-   Recall@5: 1.0
+   > Recall@5: 1.0
    
-   MAP@5: 1.0
+   > MAP@5: 1.0
    
    evaluate/: Contains the evaluation script to assess the performance of the recommender.
 
@@ -115,9 +115,9 @@ Top 4 Recommendations:
 
 **Clone the repository**
 
-   git clone https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System.git
+   > git clone https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System.git
    
-   cd SHL_Assessment_Recommendation_System
+   > cd SHL_Assessment_Recommendation_System
 
 **Install dependencies**
 
@@ -125,7 +125,7 @@ Top 4 Recommendations:
 
 **Run the app**
 
-   >streamlit run frontend/app.py
+   > streamlit run frontend/app.py
 
 
 
