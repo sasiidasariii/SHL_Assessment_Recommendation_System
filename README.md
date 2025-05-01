@@ -116,6 +116,7 @@ evaluate/: Contains the evaluation script to assess the performance of the recom
 **Clone the repository**
 
 git clone https://github.com/sasiidasariii/SHL_Assessment_Recommendation_System.git
+
 cd SHL_Assessment_Recommendation_System
 
 **Install dependencies**
