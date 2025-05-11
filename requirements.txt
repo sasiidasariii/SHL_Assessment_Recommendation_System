@@ -10,6 +10,7 @@ webdriver-manager
 fastapi
 uvicorn
 
+sentence-transformers
 
 huggingface_hub==0.13.4
 scikit-learn

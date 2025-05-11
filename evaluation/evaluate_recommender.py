@@ -1,6 +1,6 @@
 import pandas as pd
 from difflib import SequenceMatcher
-from models.recommender import retrieve_top_k
+
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -10,11 +10,13 @@ from models.recommender import retrieve_top_k
 # --- Define ground truth examples ---
 test_queries = [
     {
-        "query": "Suggest an entry-level test for assessing Python and communication skills in under 25 minutes.",
+        "query": "Find an entry-level test that evaluates reasoning skills for candidates with a time limit of 60 minutes.",
         "ground_truth_names": [
-            "Verify Interactive - Python Coding Test",
-            "Verify G+T: General Ability for Technology (Mobile-Enabled)",
-            "Verify G+T: General Ability for Technology"
+            "Verify - Deductive Reasoning",
+            "Verify - Numerical Ability",
+            "Verify - Following Instructions",
+            "Verify - Inductive Reasoning (2014)",
+           
         ],
     },
     {
@@ -26,6 +28,8 @@ test_queries = [
         ],
     },
 ]
+
+
 
 # --- Load the assessment dataset ---
 df = pd.read_csv("data/shl_detailed_test_info_final.csv")
