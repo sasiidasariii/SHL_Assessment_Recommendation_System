@@ -5,7 +5,7 @@ import numpy as np
 from difflib import get_close_matches
 
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("paraphrase-MiniLM-L3-v2")
 
 class SHLRecommender:
     def __init__(self, data_path="data/shl_detailed_test_info_final.csv"):
